@@ -3,8 +3,8 @@ import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 // initialise the WooCommerceRestApi //
 const api = new WooCommerceRestApi({
   url: "https://house-of-happiness.pl/",
-  consumerKey: process.env.WOOCOMMERCE_KEY!,
-  consumerSecret: process.env.WOOCOMMERCE_SECRET!,
+  consumerKey: process.env.NEXT_PUBLIC_WOOCOMMERCE_KEY!,
+  consumerSecret: process.env.NEXT_PUBLIC_WOOCOMMERCE_SECRET!,
   version: "wc/v3",
 });
 
