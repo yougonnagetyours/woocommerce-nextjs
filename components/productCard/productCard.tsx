@@ -23,7 +23,7 @@ const ProductCard = (props: Props) => {
         <span>{product.name}</span>
         <span>--</span>
         <span>
-          <strong>£{product.regular_price}</strong>
+          <strong>{product.regular_price} zł</strong>
         </span>
       </Details>
     </Card>
@@ -34,6 +34,7 @@ export default ProductCard;
 
 const Card = styled.div`
   width: 100%;
+  margin-bottom: 2rem;
 `;
 
 const ImageContainer = styled.div`
@@ -44,6 +45,7 @@ const ImageContainer = styled.div`
 `;
 
 const Details = styled.div`
+  font-family: ${(props) => props.theme.font.body};
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
