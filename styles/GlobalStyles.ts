@@ -12,3 +12,5 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export default GlobalStyle;
+
+//to delete
