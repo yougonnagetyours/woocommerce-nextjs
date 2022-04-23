@@ -21,6 +21,7 @@ interface Props {
 
 const Title = styled.h1`
   color: red;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 export default function Home(props: Props) {
