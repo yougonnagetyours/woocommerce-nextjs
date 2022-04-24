@@ -32,7 +32,7 @@ export default function Home(props: Props) {
 
   return (
     <BasicLayout>
-      <Title>Hello!</Title>
+      <Title>Hello World !</Title>
       {/* <StyledH1>Welcome to Next.js!</StyledH1> */}
       { products.map((product) => {
         return <ProductCard product={product} key={product.id} />;
