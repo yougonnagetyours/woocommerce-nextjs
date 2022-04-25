@@ -110,7 +110,7 @@ export interface Product {
     taxes: any[];
     meta_data: MetaData[];
     sku: string;
-    price: number;
+    price: string;
   }
   
   interface ShippingLine {
