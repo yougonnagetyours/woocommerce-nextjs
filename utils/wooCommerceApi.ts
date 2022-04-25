@@ -1,20 +1,18 @@
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
 import { Order } from "./types/wooCommerceTypes";
 
-// initialise the WooCommerceRestApi //
 const api = new WooCommerceRestApi({
   url: "https://house-of-happiness.pl/",
-  consumerKey: process.env.NEXT_PUBLIC_WOOCOMMERCE_KEY!,
-  consumerSecret: process.env.NEXT_PUBLIC_WOOCOMMERCE_SECRET!,
+  consumerKey: process.env.WOOCOMMERCE_KEY!,
+  consumerSecret: process.env.WOOCOMMERCE_SECRET!,
   version: "wc/v3",
 });
 
-// fetch all products from WooCommerce
 export async function fetchWooCommerceProducts() {
   try {
     const response = await api.get("products");
     return response;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error);
   }
 }
@@ -32,12 +30,11 @@ const data = {
   ],
 };
 
-// create new WooCommerce order
 export async function createWooCommerceOrder(data: Order) {
   try {
     const response = await api.post("orders", data);
     return response;
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(error);
   }
 }
