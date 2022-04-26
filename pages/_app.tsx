@@ -1,6 +1,6 @@
-// import GlobalStyle from '../styles/GlobalStyles'
+import GlobalStyle from '../styles/GlobalStyles'
 import { ThemeProvider } from 'styled-components'
-import { theme } from "../styles/theme"
+import { theme } from '../styles/theme';
 import type { AppProps } from 'next/app'
 import { Provider as ReduxProvider } from "react-redux";
 import { store } from "../store/store";
@@ -8,8 +8,8 @@ import { store } from "../store/store";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      {/* <GlobalStyle /> */}
       <ThemeProvider theme={theme}>
+      <GlobalStyle />
         <ReduxProvider store={store}>
           <Component {...pageProps} />
         </ReduxProvider>
