@@ -19,13 +19,13 @@ const ProductCard = (props: Props) => {
           objectFit="cover"
         />
       </ImageContainer>
-      {/* <Details>
+      <Details>
         <span>{product.name}</span>
         <span>--</span>
         <span>
           <strong>{product.regular_price} zł</strong>
         </span>
-      </Details> */}
+      </Details>
     </Card>
   );
 };
@@ -44,14 +44,13 @@ const ImageContainer = styled.div`
   padding-bottom: 100%; /* forces square aspect ratio */
 `;
 
-// const Details = styled.div`
-//   font-family: ${(props) => props.theme.font.body};
-//   width: 100%;
-//   padding-left: 16px;
-//   padding-right: 16px;
-//   padding-top: 5%;
-//   padding-bottom: 7%;
-//   display: flex;
-//   justify-content: center;
-//   gap: 12px;
-// `;
+const Details = styled.div`
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+`;
