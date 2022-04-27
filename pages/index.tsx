@@ -7,30 +7,22 @@ import { Product } from "../utils/types/wooCommerceTypes";
 
 import styled from "styled-components";
 
-import ProductCard from "../components/productCard/productCard"
+import { NavLayout } from "../layout"
+import { ProductGrid } from "../features"
 
 interface Props {
   products: Product[];
 }
 
-const Title = styled.h1`
-  /* color: red; */
-  /* font-family: 'Water Brush', cursive; */
-`;
-
 export default function Home(props: Props) {
-  // destructure props //
   const { products } = props;
 
   console.log("--WooCommerce Products: ", products);
 
   return (
-    <>
-      <Title>Hello World !</Title>
-      { products.map((product) => {
-        return <ProductCard product={product} key={product.id} />;
-      })}
-    </>
+    <NavLayout title="Menu" description="Menu page">
+      <ProductGrid products={products} />
+    </NavLayout>
   );
 }
 
