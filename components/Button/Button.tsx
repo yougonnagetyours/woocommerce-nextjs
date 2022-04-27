@@ -26,9 +26,9 @@ const StyledButton = styled.button<Props>`
   border: none;
   background-color: ${(props) =>
     props.isClicked
-      ? props.theme.colors.secondary
-      : props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.lightText};
+      ? props.theme.colors.loading
+      : props.theme.colors.background2};
+  color: ${(props) => props.theme.colors.secondary};
   transition: background-color 0.2s ease;
   padding: 10px 20px;
 `;

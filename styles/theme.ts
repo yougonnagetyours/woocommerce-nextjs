@@ -9,7 +9,7 @@ export const theme = {
     primary1: "#000000",
     background1: "#f5ecb7",
     // accent1: "hsl(34.9,98.6%,72.9%)",
-    secondary: "rgba(0, 0, 0, 0.34)",
+    secondary: "rgba(255, 255, 255, 0.9)",
     background2: "#23192d",
   },
   // Breakpoints for responsive design
