@@ -97,20 +97,20 @@ export interface Product {
   }
   
   export interface LineItem {
-    id: number;
-    name: string;
+    id?: number;
+    name?: string;
     product_id: number;
-    variation_id: number;
+    variation_id?: number;
     quantity: number;
-    tax_class: string;
-    subtotal: string;
-    subtotal_tax: string;
-    total: string;
-    total_tax: string;
-    taxes: any[];
-    meta_data: MetaData[];
-    sku: string;
-    price: string;
+    tax_class?: string;
+    subtotal?: string;
+    subtotal_tax?: string;
+    total?: string;
+    total_tax?: string;
+    taxes?: any[];
+    meta_data?: MetaData[];
+    sku?: string;
+    price?: string;
   }
   
   interface ShippingLine {

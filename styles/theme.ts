@@ -6,11 +6,11 @@ export const theme = {
   },
   // Colors for layout
   colors: {
-    primary1: "#ffffff",
-    background1: "#4dabf5",
-    accent1: "hsl(34.9,98.6%,72.9%)",
-    button: "hsl(205.1,100%,36.1%)",
-    background2: "hsl(232.7,27.3%,23.7%)",
+    primary1: "#000000",
+    background1: "#f5ecb7",
+    // accent1: "hsl(34.9,98.6%,72.9%)",
+    secondary: "rgba(255, 255, 255, 0.9)",
+    background2: "#23192d",
   },
   // Breakpoints for responsive design
   breakpoints: {
