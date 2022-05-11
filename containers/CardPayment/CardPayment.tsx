@@ -64,7 +64,7 @@ const CardPayment = (props: Props) => {
         return;
       }
     );
-    console.log("--CREATED STRIPE PAYMENT INTENT: ", paymentIntent);
+    console.log("--CREATED STRIPE PAYMENT INTENT : ", paymentIntent);
 
     // create WooCommerce order and link it with Stripe payment intent
     // NOTE: must create server-side because of env vars
